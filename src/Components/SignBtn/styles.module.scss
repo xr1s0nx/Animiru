@@ -1,0 +1,12 @@
+.signBtn {
+  transition: 0.15s;
+  font-size: 14px;
+
+  &:hover {
+    @apply text-amber-500 border-amber-500;
+  }
+}
+
+.admin {
+  color: rgb(206, 1, 1);
+}

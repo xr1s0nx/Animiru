@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text--colors_default {
+  @apply text-slate-800 dark:text-slate-200;
+}
+
+.text--colors_primary {
+  @apply text-amber-500;
+}
+
+.bg--default {
+  @apply bg-slate-200 dark:bg-[#131313];
+  transition: background 0.15s;
+}
+
+.bg--navbar {
+  @apply bg-slate-100 dark:bg-neutral-950;
+  transition: background 0.15s;
+}
+
+.color--switcher {
+  @apply text-slate-600 dark:text-amber-300;
+}
+
+.border--color-dark {
+  border: 1px solid #d3d3d317;
+}
+
+.border--color-light {
+  border: 1px solid #2b2b2b1a;
+}
+
+.border--color {
+  @apply border-[#2b2b2b1a] border-[1px] dark:border-[#d3d3d317];
+}
+
+body {
+  @apply text--colors_default;
+}
+
+* {
+  scroll-behavior: smooth;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none;
+}

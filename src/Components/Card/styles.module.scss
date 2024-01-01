@@ -1,0 +1,60 @@
+.card {
+  background-repeat: no-repeat;
+  background-position: 0 -100px;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  .descriptionBlock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: transparent;
+    transition: 0.3s;
+  }
+
+  .info {
+    transform: translateY(120%);
+    transition: 0.3s;
+    opacity: 0;
+
+    .title {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-wrap: nowrap;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .description {
+      color: #fff;
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+  }
+  img {
+    transition: 0.3s;
+  }
+
+  &:hover {
+    .descriptionBlock {
+      background: #000000a8;
+    }
+    .info {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    img {
+      transform: scale(1.05);
+    }
+  }
+}

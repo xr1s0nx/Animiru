@@ -1,0 +1,49 @@
+.menu {
+  .link {
+    transition: 0.15s;
+    @apply border-l-4 border-transparent;
+
+    &:hover {
+      @apply text-amber-500;
+      transform: translateX(5px);
+    }
+
+    &.active {
+      @apply text-amber-500 border-l-4 border-amber-500 bg-amber-500/20;
+      transform: translateX(0);
+    }
+
+    svg {
+      transition: 0.15s;
+    }
+  }
+}
+
+.navbar,
+.navWrap {
+  transition: 0.2s;
+
+  .openBtn {
+    opacity: 1;
+    transition: 0.15s;
+  }
+
+  &.small {
+    .openBtn {
+      opacity: 0;
+    }
+    .link {
+      svg {
+        transform: translateX(7px);
+      }
+      p {
+        visibility: hidden;
+      }
+    }
+    &:hover {
+      .openBtn {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.loginBtn {
+  transition: 0.15s ease-in;
+
+  &:hover {
+    @apply bg-amber-500 text-white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    background: transparent;
+    @apply text-amber-500;
+  }
+}
